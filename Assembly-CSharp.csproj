@@ -37,6 +37,8 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Pacman.cs" />
+     <Compile Include="Assets\Scripts\MeshdetectorManager.cs" />
+     <Compile Include="Assets\Scripts\MeshDetector.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:/unity5/2020.3.15f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

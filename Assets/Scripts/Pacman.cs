@@ -8,11 +8,14 @@ public class Pacman : MonoBehaviour
 
     public Animator animator;
     public SpriteRenderer []spriteRenderer;
-
+    
+    public Rigidbody2D rigidbody2D;
+    public float speed=1;
     void Start()
     {
         animator=GetComponentInChildren<Animator>();
         spriteRenderer=GetComponentsInChildren<SpriteRenderer>();
+        rigidbody2D=GetComponent<Rigidbody2D>();
         animator.Play("Pacman_Y",0);
 
     }
@@ -20,11 +23,12 @@ public class Pacman : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        var delta=Time.deltaTime*speed;
+
         if(Input.GetKeyDown(KeyCode.W))
         {
             animator.Play("Pacman_Y",0);
             spriteRenderer[1].flipY=false;
-
            
         }
         if(Input.GetKeyDown(KeyCode.S))
@@ -39,15 +43,23 @@ public class Pacman : MonoBehaviour
             animator.Play("Pacman_X",0);
             spriteRenderer[1].flipX=false;
 
-           
         }
-        if(Input.GetKeyDown(KeyCode.A))
+        if(Input.GetKey(KeyCode.A))
         {
             // animator.Play("Pacman_Y",0);
             animator.Play("Pacman_X",0);
             spriteRenderer[1].flipX=true;
-
         }
-         Debug.Log("update");
+
+        float x=Input.GetAxis("Horizontal");
+        float y=Input.GetAxis("Vertical");
+        this.transform.Translate(new Vector2(x,y)*delta);
+        //  Debug.Log("update");
+    }
+    void OnCollisionEnter2D(Collision2D other) {
+         print("endter");
+    }
+    private void FixedUpdate() {
+        
     }
 }

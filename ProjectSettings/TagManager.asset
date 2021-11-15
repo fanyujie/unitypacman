@@ -12,7 +12,7 @@ TagManager:
   - Water
   - UI
   - 
-  - 
+  - background
   - 
   - 
   - 
@@ -40,4 +40,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: meshpath
+    uniqueID: 341272817
+    locked: 0
+  - name: obj
+    uniqueID: 156405633
+    locked: 0
+  - name: background
+    uniqueID: 2115475241
     locked: 0

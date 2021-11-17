@@ -237,6 +237,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4848073205460008652, guid: 738cb5c3f17507d41993962989c4c20e, type: 3}
   m_PrefabInstance: {fileID: 4848073205568618877}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &126468019 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4848073205460008649, guid: 738cb5c3f17507d41993962989c4c20e, type: 3}
+  m_PrefabInstance: {fileID: 4848073205568618877}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126468017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffd26d05f2e4eed4da7a236d86c476dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &126468022
 Rigidbody2D:
   serializedVersion: 4
@@ -1231,9 +1242,10 @@ GameObject:
   m_Component:
   - component: {fileID: 934470510}
   - component: {fileID: 934470509}
+  - component: {fileID: 934470511}
   m_Layer: 0
   m_Name: Blinky
-  m_TagString: Untagged
+  m_TagString: Live
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1297,13 +1309,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 934470508}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0023, y: 0.0005, z: 0}
+  m_LocalPosition: {x: -0.846, y: 1.392, z: 0}
   m_LocalScale: {x: 0.13822284, y: 0.14470944, z: 1}
   m_Children:
   - {fileID: 1541141555}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &934470511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934470508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1342507f8a997448a035ea1453683d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  view_r: 0
+  direction: {x: 0, y: 0}
+  manager: {fileID: 1686905420}
+  pacman: {fileID: 126468019}
+  viewed: []
+  Accum: 0
 --- !u!1 &1028199198
 GameObject:
   m_ObjectHideFlags: 0
@@ -1940,7 +1970,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4576181941621254071, guid: 23fcffec68882304691ca0c4c75c65c6, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23fcffec68882304691ca0c4c75c65c6, type: 3}
@@ -2991,17 +3021,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pacman
       objectReference: {fileID: 0}
+    - target: {fileID: 4848073205460008652, guid: 738cb5c3f17507d41993962989c4c20e, type: 3}
+      propertyPath: m_TagString
+      value: Live
+      objectReference: {fileID: 0}
     - target: {fileID: 4848073205460008654, guid: 738cb5c3f17507d41993962989c4c20e, type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4848073205460008654, guid: 738cb5c3f17507d41993962989c4c20e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0015
+      value: 0.829
       objectReference: {fileID: 0}
     - target: {fileID: 4848073205460008654, guid: 738cb5c3f17507d41993962989c4c20e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0036
+      value: -1.22
       objectReference: {fileID: 0}
     - target: {fileID: 4848073205460008654, guid: 738cb5c3f17507d41993962989c4c20e, type: 3}
       propertyPath: m_LocalPosition.z

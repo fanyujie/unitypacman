@@ -69,7 +69,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 341272817
-  m_SortingLayer: -1
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
   m_Color: {r: 0.050943315, g: 1, b: 0.2726458, a: 1}
@@ -109,8 +109,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4576181941621254071}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.99481, y: 1.54375, z: 0}
-  m_LocalScale: {x: 0.06081457, y: 0.060107127, z: 1}
+  m_LocalPosition: {x: -1.00164, y: 1.55059, z: 0}
+  m_LocalScale: {x: 0.047144867, y: 0.0464373, z: 1}
   m_Children:
   - {fileID: 4576181939711888199}
   m_Father: {fileID: 0}
@@ -154,7 +154,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 341272817
-  m_SortingLayer: -1
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.25490198}
@@ -207,3 +207,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectcolor: {r: 1, g: 0, b: 0, a: 1}
   defaultcolor: {r: 0.2875129, g: 1, b: 0, a: 1}
+  neibor: []
+  parent: {fileID: 0}
+  isobstacle: 0
+  islive: 0
+  old: {x: 0, y: 0, z: 0}

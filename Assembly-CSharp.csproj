@@ -37,8 +37,19 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Pacman.cs" />
-     <Compile Include="Assets\Scripts\MeshdetectorManager.cs" />
      <Compile Include="Assets\Scripts\MeshDetector.cs" />
+     <Compile Include="Assets\Scripts\MeshdetectorManager.cs" />
+     <Compile Include="Assets\Scripts\Blinky.cs" />
+     <Compile Include="Assets\Scripts\Priority Queue\IPriorityQueue.cs" />
+     <Compile Include="Assets\Scripts\Priority Queue\IFixedSizePriorityQueue.cs" />
+     <Compile Include="Assets\Scripts\Priority Queue\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Scripts\Priority Queue\GenericPriorityQueueNode.cs" />
+     <Compile Include="Assets\Scripts\Priority Queue\StablePriorityQueue.cs" />
+     <Compile Include="Assets\Scripts\Priority Queue\GenericPriorityQueue.cs" />
+     <Compile Include="Assets\Scripts\Priority Queue\FastPriorityQueueNode.cs" />
+     <Compile Include="Assets\Scripts\Priority Queue\FastPriorityQueue.cs" />
+     <Compile Include="Assets\Scripts\Priority Queue\StablePriorityQueueNode.cs" />
+     <Compile Include="Assets\Scripts\Priority Queue\SimplePriorityQueue.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:/unity5/2020.3.15f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
